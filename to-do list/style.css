@@ -1,0 +1,145 @@
+
+body{
+   font-family: 'Poppins', sans-serif;
+   background-image:url(todo_back-img.jpg) ;
+}
+
+h2{
+    display:flex;
+    justify-content: center;
+    color:#ffeba7;
+    letter-spacing: 1px;
+}
+input{
+    border-radius: 5px;
+    border: 2px solid black ;
+    margin-top:25px; 
+    margin-right:15px;
+    margin-left: 35px;
+    height:40px;
+    width:300px;
+    padding-left:10px;
+}
+
+ /* input:hover{
+    border: 2px solid rgb(255, 255, 255);
+}   */
+#wrapper{
+    height:600px;
+    width:500px;
+    margin:30px auto;
+    background-color:#000000;
+    border-radius:20px;
+    padding:30px;
+}
+/* add button */
+button{
+    margin-top:20px;
+    background-color:#ffeba7;
+    border-radius: 5px;
+    /* height: 44px; */
+    font-weight: 900;
+    padding: 12px 30px;
+    border: 2px solid black;
+    color: black;
+}
+/* add button */
+button:hover{
+    cursor:pointer;
+    background-color:orangered;
+    color:white;
+    border: 2px solid white;
+}
+
+.del_btn{
+    padding:8px 16px;
+    margin-left: 12px;
+    background-color:orangered;
+    color:white;
+    border: 2px solid white;
+}
+
+.del_btn:hover{
+    cursor:pointer;
+    background-color:#ffeba7;
+    border: 2px solid black;
+    color: black;
+   
+}
+
+#todoList{
+    color:white;
+    font-size:28px;  
+    margin-top:10px; 
+    margin-left: 35px;
+    cursor: pointer;
+}
+
+@media (max-width: 500px){
+    h2{
+        display:flex;
+        justify-content: center;
+        color:#ffeba7;
+        letter-spacing: 1px;
+        margin-bottom: 0px;
+    }
+
+
+    #wrapper{
+        height:600px;
+        width:300px;
+        margin:30px auto;
+}
+    input{
+        height:30px;
+        width:70%;
+        margin-left: auto;
+        margin-top: auto;
+    }
+
+    button{
+        padding:5px 20px;
+        font-size:15px;
+    }
+    button:hover{
+        cursor:pointer;
+        background-color:orangered;
+        color:white;
+        border: 1px solid white;
+    }
+
+    #todoList{
+        color:white;
+        font-size:15px;  
+        margin-left: 0px; 
+        cursor: pointer;
+      
+    }
+    .del_btn{
+        padding:3px 7px;
+        margin-left: 12px;
+        background-color:orangered;
+        color:white;
+        font-size: 8px;
+        border: 1px solid white;
+        font-weight: 400;
+        margin-top: 8px;
+    }
+    .del_btn:hover{
+        cursor:pointer;
+        background-color:#ffeba7;
+        border: 1px solid black;
+        color: black;
+       
+    }
+
+    /* new list */
+   li{
+    margin-bottom: 10px;
+    /* margin-left: 0; */
+   }
+   #result{
+    padding-left: 20px;
+   }
+
+}
